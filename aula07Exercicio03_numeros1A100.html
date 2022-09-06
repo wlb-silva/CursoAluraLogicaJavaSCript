@@ -1,18 +1,30 @@
 <meta charset="UTF-8">
 <script>
+
     function pulaLinha() {
+
         document.write("<br>");
     }
 
     function mostra(frase) {
+
         document.write(frase);
         pulaLinha();
     }
 
-    var contador = 20;
-    while(contador >= 1) {
-        mostra(contador);
-        contador -=1; 
+    // imprima todos os números pares de 1 a 100 e ao final imprima a palavra "FIM".
+
+    
+    var i=0;
+
+    var contador = 2;
+
+    while (contador<=100){
+    	mostra (contador);
+    	contador+=2;
+    	
     }
+
     mostra("FIM");
+
 </script>

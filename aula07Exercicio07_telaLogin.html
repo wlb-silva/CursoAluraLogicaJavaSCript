@@ -1,0 +1,49 @@
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    // Imprimir todos os números entre 30 e 40, porém os números 33 e 37 não podem ser impressos.
+
+   var loginCadastrado = "alura";
+   var senhaCadastrada = "alura321";
+    
+   
+   
+
+   var maximoTentativas = 3;
+   var tentativaAtual = 1;
+
+   while (tentativaAtual<=maximoTentativas){
+       var loginInformado = prompt("Informe seu login");
+       var senhaInformada = prompt("Informe sua senha");
+       
+       if (loginCadastrado==loginInformado && senhaCadastrada==senhaInformada) {
+    
+            alert("Bem-vindo ao sistema "+loginInformado)
+
+            tentativaAtual = maximoTentativas
+            
+           } else {
+                if (tentativaAtual ==3 ) {
+                    alert("Número de tentativas ultrapassadas!")
+                }else{
+                    alert ("Login Inválido tente novamente");
+                }
+                
+           }
+
+           tentativaAtual+=1
+           
+   }
+
+</script>

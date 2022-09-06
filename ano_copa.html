@@ -12,12 +12,15 @@
         pulaLinha();
     }
 
-   var anoCopa = 1930;
+    var limite = parseInt(prompt("Entre com a data limite"));
 
-   while (anoCopa<=1950){
-   	mostra ("Teve copa em " + anoCopa);
-   	anoCopa+=4;
+    var anoCopa = 1930;
 
-   }
-   mostra ("FIM");
+    while (anoCopa<=limite){
+    	mostra ("teve compa em "+ anoCopa);
+    	anoCopa=anoCopa+4
+    }
+
+    mostra("FIM");
+
 </script>

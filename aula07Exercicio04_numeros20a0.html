@@ -12,13 +12,16 @@
         pulaLinha();
     }
 
-    for (var linha = 1; linha<=3; linha++){
+    // Imprimir em ordem decrescente números de 20 e 0;
 
-        for (var coluna = 1; coluna<=10; coluna++){
-            document.write("*");
-        }
-        pulaLinha();
+   var contador = 20;
 
-    }
+   while (contador>=0){
+        mostra(contador);
+        contador-=1;
+   } 
+   
+
+    mostra("FIM");
 
 </script>
